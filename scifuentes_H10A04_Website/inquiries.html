@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CARistic - Used Car Sales</title>
+    <link type="text/css" rel="stylesheet" href="styles/site.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>CARistic</h1>
+
+        <img id="bimmer" src="images/BMW E46 M3 GTR transparent.png" alt="Image of the front a BMW E46 GTR"> <!-- width="300px" --> 
+
+
+        <nav>
+                <a class="btn" href="index.html">Home</a>&nbsp;&nbsp;
+                <a class="btn"  href="catalogue.html">Catalogue</a>&nbsp;&nbsp;
+                <a class="btn"  href="appraisal.html">Appraisal</a>&nbsp;&nbsp;
+                <a class="btn"  href="about.html">About</a>&nbsp;
+        
+        </nav>
+        <p id="dn">caristic.ca</p> 
+    </header>
+
+
+    <h2 class="item1" >Inquiries</h2>
+
+    <form class="item1"  name="inquiries" id="inquiries" method="GET" action="">
+
+    <p>
+        
+
+        <label class="textlabel1" for="Name">Name: </label>
+        <input type="text" name="Name" id="Name" size="25" maxlength="25"/>
+    </p>
+
+    <p>
+        <label  class="textlabel1" for="Email">Email: </label>
+        <input type="text" name="Email" id="Email" size="50" maxlength="60"/>
+    </p>
+
+    <p>
+            <label  class="textlabel1" for="Phone">Phone: </label>
+            <input type="text" name="Phone" id="Phone" size="20" maxlength="20"/>
+        </p>
+
+
+    <fieldset>
+        <legend>What do you need help with?</legend>
+
+        <input type="checkbox" name="chk_cat" id="chk_cat"/>
+        <label for="chk_cat">Catalogue </label><br/>
+
+        <input type="checkbox" name="chk_com" id="chk_com"/>
+        <label for="chk_com">About company </label><br/>
+
+        <input type="checkbox" name="chk_job" id="chk_job"/>
+        <label for="chk_job">About job openings </label><br/>
+
+        <input type="checkbox" name="chk_appr" id="chk_appr"/>
+        <label for="chk_appr">Appraisal </label><br/>
+
+        <input type="checkbox" name="chk_other" id="chk_other"/>
+        <label for="chk_other">Other </label><br/>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>First time customer?</legend>
+
+        <input type="radio" name="rg1" id="rg1" value="1"/>
+        <label for="rg1">Yes </label> <br />
+
+        <input type="radio" name="rg1"  id="rg2" value="1"/>
+        <label for="rg2">No</label> <br />
+
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>When would you be available?</legend>
+
+        <select name="available" id="available">
+
+            <option value="0">-- Select a day --</option>
+            <optgroup label="This week">
+            <option value="1">Monday </option>
+            <option value="2">Tuesday </option>
+            <option value="3">Wednesday </option>
+            <option value="4">Thursday </option>
+            <option value="5">Saturday </option>
+            </optgroup> 
+
+            <optgroup label="Next week"></optgroup>
+            <option value="1">Monday </option>
+            <option value="2">Tuesday </option>
+            <option value="3">Wednesday </option>
+            <option value="4">Thursday </option>
+            <option value="5">Saturday </option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Message</legend>
+        <textarea  class="textlabel" name="ans" id="ans" rows="4" cols="90"></textarea>
+    </fieldset>
+
+    <input class="Subbtn" type="submit" id="btnSub" value="Send Form"/>
+
+</form>
+   
+    
+    <footer>
+
+            <div class="foot">
+
+             <ul>
+
+             <li><a href="index.html">Home</a></li>
+            
+             <li><a href="catalogue.html">Our Catalogue</a></li>
+
+             <li><a class="InMobile1" href="appraisal.html">Want to get your car appraised?</a></li>
+             
+             <li><a class ="NotMobile" href="customers.html">Testimonies/Reviews</a></li>
+             
+             <li><a class ="NotMobile" href="detailing.html">Detailing</a></li>
+            
+             <li><a class="InMobile2" href="about.html">Contact page</a></li>
+             
+            
+            </ul>   
+
+            </div>
+
+            <p id="copy">&copy 2019 CARistic. All Rights Reserved. </p> 
+    </footer>
+
+</body>
+
+
+</html>

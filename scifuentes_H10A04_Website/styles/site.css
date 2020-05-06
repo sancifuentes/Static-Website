@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Cairo|Righteous&display=swap');
+
+:root {
+    --main-grid-column-start: 2;
+    --main-red-color: #ff1938;
+    --main-grid-span: 2 span;
+    --main-txt-align: center;
+    --main-grid-column-start1: 1;
+    --main-black-color: black;
+}
+
+
+header {
+    background-color: #ededed;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 190px;
+    padding-top: 10px;
+    border-bottom: solid thin var(--main-red-color);
+    overflow: auto;
+    z-index: 1;
+    grid-column: var(--main-grid-span);
+
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Bree Serif', 'Cairo', 'Righteous';
+    text-align: var(--main-txt-align);
+}
+
+h2 {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h3 {
+    width: 50%;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+
+img {
+    border: solid thin var(--main-black-color);
+}
+
+#bimmer {
+    position: absolute;
+    top: 30px;
+    width: 23%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+#car1 {
+    max-width: 450px;
+}
+
+#car2 {
+    max-width: 450px;
+}
+
+nav {
+    text-align: var(--main-txt-align);
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    font-size: 1.3em;
+    font-family: 'Bree Serif', 'Cairo', 'Righteous';
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--main-black-color);
+
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    min-height: 100%;
+    padding: 0 ;
+    margin: 0;
+    font-family: 'Bree Serif', 'Cairo', 'Righteous';
+    line-height: 1.5em;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.testi {
+    width: 70%;
+    padding-left: 30px;
+    text-align: justify;
+    float: left;
+    font-size: 1.25em;
+    font-style: italic;
+
+
+}
+
+.testiname {
+    left: 20%;
+    width: 50%;
+    padding-left: 30px;
+    text-align: justify;
+    float: left;
+    font-size: 1.25em;
+}
+
+.item1 {
+    grid-row-start: 3;
+    grid-column-start: var(--main-grid-column-start1);
+}
+
+.item1a {
+    grid-row-start: 2;
+}
+
+table.item1 {
+    grid-column: var(--main-grid-span);
+}
+
+.item2 {
+    grid-row-start: 4;
+    grid-column-start: var(--main-grid-column-start1);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item3 {
+    grid-row-start: 5;
+    grid-column-start: var(--main-grid-column-start1);
+
+}
+
+.item4 {
+    grid-row-start: 6;
+    grid-column-start: var(--main-grid-column-start1);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item4a {
+    grid-row-start: 4;
+    grid-column-start: var(--main-grid-column-start);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item5 {
+    grid-row-start: 7;
+    grid-column-start: var(--main-grid-column-start1);
+}
+
+.item5a {
+    grid-row-start: 5;
+    grid-column-start: var(--main-grid-column-start);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item6 {
+    grid-row-start: 8;
+    grid-column-start: var(--main-grid-column-start1);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item6a {
+    grid-row-start: 2;
+    grid-column-start: var(--main-grid-column-start);
+    margin-bottom: 1px;
+}
+
+
+.item7 {
+    grid-row-start: 4;
+    grid-column-start: var(--main-grid-column-start);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.item7a {
+    grid-row-start: 3;
+    grid-column-start: var(--main-grid-column-start);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+.item8 {
+    grid-row-start: 5;
+    grid-column-start: var(--main-grid-column-start);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+video {
+    top: 30px;
+    max-width: 500px;
+    height: auto;
+    
+}
+
+
+table {
+    background-color: #ededed;
+    width: 70%;
+
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: solid 2px var(--main-black-color);
+    ;
+}
+
+td, th {
+    vertical-align: top;
+}
+
+td:first-child {   
+    text-align: var(--main-txt-align);
+}
+
+td:last-child {   
+    text-align: var(--main-txt-align);
+}
+
+
+.item1#inquiries {
+    grid-row-start: 4 ;
+}
+
+form {
+    margin-left: 120px;
+    margin-top: -50px;
+}
+
+#hrs {
+    width: 23%;
+    text-align: var(--main-txt-align);
+    min-width: 20%;
+}
+/* 
+article {
+    float: left;
+    margin: 5px;
+} */
+
+p a {
+    text-decoration: none;
+    color: #494949;
+}
+
+
+.email {
+    text-decoration: none;
+    color: var(--main-black-color);
+    padding-left: 30px;
+}
+
+
+ footer {
+    background-color: #494949;
+    font-size: small;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Bree Serif', 'Cairo', 'Righteous';
+    border-top: solid thin var(--main-red-color);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+
+} 
+
+ul {
+    list-style-type: none;
+}
+
+#copy {
+    font-size: .7em;
+    width: 11%;
+    margin: 0;
+    display: block;
+}
+
+#dn {
+    font-size: .7em;
+    width: 11%;
+    display: block;
+    margin: 0;
+
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.btn {
+    margin: 5px 0px 5px 0px;
+    background-color: white;
+    padding: 7px 10px 6px 10px;
+    border-radius: 8px;
+    border-color: var(--main-red-color);
+}
+
+/* #page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+} */
+
+legend {
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+fieldset {
+    margin-left: 155px;
+    margin-right: 155px;
+}
+
+.textlabel {
+    line-height: 1.8em;
+    margin-right: 5px;
+    float: left;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.textlabel1 {
+    line-height: 1.8em;
+    text-align: right;
+    width: 150px;
+    margin-right: 5px;
+    float: left;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+
+
+.Subbtn {
+    margin-left: 155px;
+    width: 10%;
+    margin-top: 20px;
+}
+
+img.item1 {
+    margin-left: 10%;
+}
+
+.item1#mec {
+    margin-left: 35%;
+    margin-right: 20%;
+    margin-top: 1.2%;
+    font-size: 1.1em;
+}
+
+img.item2 {
+    grid-row-start: 3;
+    grid-column-start: var(--main-grid-column-start);
+    margin-left: 10%;
+}
+
+.item2#sale {
+    margin-left: 35%;
+    margin-right: 20%;
+    margin-top: 1.2%;
+    font-size: 1.1em;
+    grid-row-start: 3;
+    grid-column-start: var(--main-grid-column-start);
+}
+
+img.item3 {
+    margin-left: 10%;
+    grid-row-start: 4;
+}
+
+.item3#driver {
+    margin-left: 35%;
+    margin-right: 20%;
+    font-size: 1.1em;
+    grid-row-start: 4;
+}
+
+img.item4 {
+    grid-row-start: 4;
+    grid-column-start: var(--main-grid-column-start);
+    margin-left: 10%;
+}
+
+.item4#carh {
+    grid-row-start: 4;
+    grid-column-start: var(--main-grid-column-start);
+    margin-left: 35%;
+    margin-right: 20%;
+    margin-top: 1.2%;
+    font-size: 1.1em   
+}
+
+
+
+@media all and (max-width: 768px) {
+    .NotMobile {
+        display: none;
+        
+    }
+
+    p {
+        text-align: var(--main-txt-align);
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .desc {
+        font-size: 1.2em;
+    }
+
+    .item1.index {
+        grid-column: var(--main-grid-span);
+    }    
+
+    .desc.item2.index {
+        grid-column: var(--main-grid-span);
+    }
+
+    .desc.item3.index {
+        grid-column: var(--main-grid-span);
+    }
+
+    .item4 {
+        grid-column: var(--main-grid-span);
+    }
+
+    .item5 {
+         grid-column: var(--main-grid-span);
+    }
+
+    .item7 {
+        grid-row-start: 10;
+        grid-column-start: var(--main-grid-column-start1);
+        grid-column: var(--main-grid-span);
+    }
+
+    .item8 {
+        grid-row-start: 11;
+        grid-column-start: var(--main-grid-column-start1);
+        grid-column: var(--main-grid-span);
+    }
+
+
+
+
+    #car1.item4a {
+        grid-row-start: 7;
+        grid-column-start: var(--main-grid-column-start1);
+    }
+
+    
+
+    #car1 {
+        max-width: 300px;
+    }
+
+    #car2 {
+        max-width: 300px;
+    }
+
+    #car2.item5a {
+        grid-row-start: 7;
+        grid-column-start: var(--main-grid-column-start);
+
+        /* float: right;
+        padding-right: 20px; */
+    }
+
+    table {
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    #hrs {
+        min-width: 40%;
+    }
+
+     footer {
+        text-align: center;
+        font-size: 1.03em;
+    } 
+    
+    #copy {
+        display: inline;
+        
+    }
+
+    #mec, #sale, #driver, #carh {
+        display: none;
+    }
+
+    .item1#mecmob {
+        margin-left: 60%;
+        margin-right: 20%;
+        margin-top: 1.2%;
+        font-size: 1.1em;
+    }
+    
+    .item2#salemob {
+        margin-left: 64%;
+        margin-top: 1.2%;
+        font-size: 1.1em;
+        grid-row-start: 3;
+        grid-column-start: var(--main-grid-column-start);
+    }
+    
+    .item3#drivermob {
+        margin-left: 35%;
+        margin-left: 64%;
+        font-size: 1.1em;
+        grid-row-start: 4;
+    }
+    
+    .item4#carhmob {
+        grid-row-start: 4;
+        grid-column-start: var(--main-grid-column-start);
+        margin-left: 61%;
+        margin-right: 30%;
+        margin-top: 1.2%;
+        font-size: 1.1em   
+    }
+}
+
+@media all and (min-width: 769px) {
+
+    a:hover {
+        color: var(--main-red-color);
+        transition: 240ms;
+    }
+    .btn:hover {
+        background-color: var(--main-black-color);
+    }
+
+    article {
+        float: left;
+        margin: 5px;
+    }
+
+    .desc {
+        left: 20%;
+        width: 50%;
+        padding-left: 30px;
+        text-align: justify;
+        float: left;
+        font-size: 1.25em;
+    }
+
+    table {
+        margin-left: 16%;
+    }
+
+    .Subbtn:hover {
+        color: var(--main-red-color);
+        transition: 240ms;
+    }
+
+    .Subbtn:hover {
+        background-color: var(--main-black-color);
+    }
+
+
+    #car2 {
+        margin-right: 20px;
+    } 
+
+    li {
+       display: inline-block;
+       padding-left: 16vh;
+    }
+    
+    ul {
+        margin: 0;
+    }
+
+    #copy {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #mecmob, #salemob, #drivermob, #carhmob{
+        display: none;
+    }
+
+
+}
